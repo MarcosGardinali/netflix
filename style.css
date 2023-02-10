@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap');
+
+/*criação de variáveis no css*/
+:root{
+	--cor-vermelha: red;
+	--cabecalho-cor-opacidade: rgba(54,54,54, 0.05);
+
+	--fonte-principal: 'Bebas Neue', cursive;
+	--fonte-destaques: 'Montserrat', sans-serif;;
+	--dark-background: url(images/bg.png);
+	--light-background: linear-gradient(black 1%, white);
+}
+
+body{
+	background-image: var(--dark-background);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: var(--fonte-principal);
+	box-sizing: border-box;
+}
+
+.cabecalho {
+	background-color: var(--cabecalho-cor-opacidade);
+	padding: 10px 0 0 10px;
+	opacity: 90%;
+}
+
+.caixa {
+	position: relative;
+	width: 88vw;
+	margin: 0 0 0 10px;
+	display: flex;
+	align-items: center;
+}
+
+h1 .logo{
+	width: 30px;
+	padding-left: 5px;
+	padding-right: 8px;
+	transition: 1s all;
+}
+
+.logo:hover{
+	width: 35px;
+	box-shadow: 0 1px var(--cor-vermelha);
+}
+
+nav {
+	top: 210px;
+	padding: 5px;
+}
+
+nav li {
+	font-size: 1rem;
+	display: inline;
+	margin: 0 0 0 15px;
+	transition: 1s all;
+}
+
+nav li:hover{
+	font-style: italic;
+	color: darkred;
+	border: 1px solid var(--cor-vermelha);
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: inset 0 0 5px var(--cor-vermelha);
+}
+
+nav a {
+	color: red;
+	font-size: 1.1rem;
+	text-decoration: none;
+	padding: 0.1rem;
+}
+
+.pesquisa-destaque{
+	position: absolute;
+	top: 11px;
+	right: -10%;
+	display: flex;
+}
+
+#lupa{
+	height: 30px;
+	margin: 0 5px 0 0;
+	transition: 1s all;
+}
+
+#lupa:hover{
+	height: 35px;
+	cursor: pointer;
+}
+
+
+#pesquisa{
+	height: 5px;
+	border-radius: 10px;
+	border-color: #F6F6F6;
+	padding: 10px;
+	transition: transform 1s;
+	margin: 0 10px 60px 0;
+	background: transparent;
+	color: whitesmoke;
+}
+
+.invisivel{
+	opacity: 0;
+	transition: transform 1s;
+	display: none;
+}
+
+.destaques {
+	width: 95%;
+	margin: 0 1%;
+	padding: 1% 1%;
+	display: flex;	
+	font-family: var(--fonte-destaques); 
+	overflow: auto;
+}
+
+.destaques h2{
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: 	#B22222;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.destaques li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: #F0FFFF;
+	width: 30%;
+	margin: 0 0.15% 1%;
+	padding: 1.25rem 0;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	transition: 0.5s all;
+	background: rgba(105,105,105, 0.05);
+}
+
+.destaques li:hover{
+	font-size: 1.05rem;
+	border-radius: 35px 10px 25px 10px;
+	box-shadow: inset 0 0 5px whitesmoke;
+}
+
+.destaques_paragrafo_imagem{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+.destaques li p{
+	width: 90%;
+	text-align: justify;
+	margin-bottom: 1.1rem;
+}
+
+.destaques img{
+	width: 85%;
+	border-radius: 10px;
+}
+
+footer{
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: transparent;
+	color: white;
+	font-size: 0.7rem;
+}
+
+.rodapeIMG{
+	height: 3.1rem;
+}
+
+@media(max-width: 1275px){
+	.cabecalho{
+		padding: 5% 0 0;
+	}
+
+	.caixa{
+		margin: 0;
+		width: 100%;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.pesquisa-destaque{
+		position: relative;
+		flex-direction: column;
+		right: 0;
+	}
+
+	.conteudo{
+		padding: 3% 5%;
+	}
+
+	.destaques{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.destaques li{
+		width: 90%;
+		margin: 1% 0;
+	}
+}

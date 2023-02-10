@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html = lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Netflix</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+	<header class="cabecalho">
+		<section class="caixa">
+			<h1><a href="home.html"><img src="images/logo.png" class="logo"></a></h1>
+			<nav>
+				<ul>
+					<li><a href="filmes.html">Filmes</a></li>
+					<li><a href="series.html">Séries</a></li>
+					<li><a href="documentarios.html">Documentários</a></li>
+				</ul>	
+			</nav>
+			<form class="pesquisa-destaque">
+				<input type="text" id="pesquisa" name="pesquisa" class="invisivel" placeholder="&#128269; | Pesquisar">
+				<label><img src="images/loupe.png" id="lupa"></label>
+			</form>
+		</section>
+	</header>
+	<main class="conteudo">
+		<section class="filmes_destaques">
+			<h1>Filmes</h1>
+			<ul class="destaques">
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Jurassic World Domínio</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>Quatro anos após a destruição da Ilha Nublar, os dinossauros, vivem e caçam ao lado de humanos em todo o mundo.</p>
+						<img src="images/jw.jpg" alt="Cartaz Jurassic World Domínio">
+					</div>	
+				</li>
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Invocação do mal 3 A ordem do demônio</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>O casal Ed e Lorraine investigam um assassino que alega ter sido possuído por um demônio.</p>
+						<img src="images/im3.jpg" alt="Cartaz Invocação do mal 3">
+					</div>	
+				</li>
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Harry Potter e o Prisioneiro de Azkaban</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>É o início do terceiro ano na escola de bruxaria Hogwarts. Harry têm muito o que aprender.</p>
+						<img src="images/hp3.jpg" alt="Cartaz Harry Potter e o Prisioneiro de Azkaban">
+					</div>	
+				</li>
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Godzilla vs Kong</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>Kong e seus protetores embarcam em uma jornada perigosa para encontrar sua origem e verdadeiro lar.</p>
+						<img src="images/gk.jpg" alt="Cartaz Godzilla Vs Kong">
+					</div>	
+				</li>
+			</ul>
+		</section>
+		<section class="series_destaques">
+			<ul class="destaques">
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Peaky Blinders</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>Uma notória gangue da Inglaterra de 1919 ascende no submundo liderada pelo cruel Tommy Shelby, um criminoso disposto a subir na vida a qualquer preço.</p>
+						<img src="images/pb.jpg" alt="Cartaz Peaky Blinders">
+					</div>	
+				</li>
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Sobrenatural</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>Os irmãos Sam e Dean Winchester encaram cenários sinistros caçando monstros.</p>
+						<img src="images/spn.jpg" alt="Cartaz Sobrenatural">
+					</div>	
+				</li>
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">Jurassic World: Camp Cretaceous</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>Seis adolescentes convidados para participar de um acampamento de última geração na Ilha Nublar precisam se unir para sobreviver quando os dinossauros se soltam do cativeiro.</p>
+						<img src="images/jwcc.jpg" alt="Cartaz Jurassic World Acampamento Jurassico">
+					</div>	
+				</li>
+				<li class="itemDestaque">
+					<h2 class="titulo_destaque">The Walking Dead</h2>
+					<div class="destaques_paragrafo_imagem">
+						<p>Baseado na história em quadrinhos escrita por Robert Kirkman, este drama potente e visceral retrata a vida nos Estados Unidos pós-apocalíptico.</p>
+						<img src="images/twd.jpg">
+					</div>	
+				</li>
+			</ul>
+		</section>	
+	</main>
+	<script src="js/botaoPesquisa.js"></script>
+	<script src="js/filtra.js"></script>
+<footer>
+	<img src="images/rodapeLogo.png" class="rodapeIMG">
+	<p>&#169;</p>
+</footer>	
+</body>
+</html>
