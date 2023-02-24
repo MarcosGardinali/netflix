@@ -9,14 +9,36 @@
 	--fonte-destaques: 'Montserrat', sans-serif;;
 	--dark-background: url(images/bg.png);
 	--light-background: linear-gradient(black 1%, white);
+
+	--label-icon:  url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+}
+
+.mudar-tema{
+	background: var(--label-icon);
+	padding: 67px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 4%;
+	left: 4%;
+	cursor: pointer;
+}
+
+#btn {
+	display: none;
+}
+
+.dark-mode{
+	--label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+	--cor-fundo: url("images/bg.png");
 }
 
 body{
-	background-image: var(--dark-background);
+	background-image: var(--cor-fundo);
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: var(--fonte-principal);
 	box-sizing: border-box;
+	transition: 2s;
 }
 
 .cabecalho {
