@@ -15,11 +15,11 @@
 
 .mudar-tema{
 	background: var(--label-icon);
-	background-size: 1em;
+	background-size: 1.5em;
 	padding: 67px;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: -1.5%;
+	top: 3.5%;
 	left: 25%;
 	cursor: pointer;
 }
@@ -181,7 +181,7 @@ nav a {
 	width: 90%;
 	text-align: justify;
 	margin-bottom: 1.1rem;
-	color: var(--cor-vermelha);
+	color: darkred;
 }
 
 .destaques img{
