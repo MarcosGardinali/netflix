@@ -15,7 +15,7 @@
 
 .mudar-tema{
 	background: var(--label-icon);
-	background-size: 1rem;
+	background-size: 1em;
 	padding: 67px;
 	background-repeat: no-repeat;
 	position: absolute;
