@@ -13,7 +13,3 @@ habilitaPesquisa.addEventListener("click", function(){
 		campoPesquisa.classList.add("invisivel");
 	}
 });
-
-document.querySelector("#btn").addEventListener("click", () => {
-	document.body.classList.toggle("dark-mode")
-});
