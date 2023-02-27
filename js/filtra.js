@@ -1,7 +1,8 @@
 const destaques = document.querySelectorAll(".itemDestaque");
 console.log(destaques);
 
-campoPesquisa.addEventListener("input", function(){
+campoPesquisa.addEventListener("input", function(event){
+	event.preventDefault();
 
 	if (this.value.length > 0) {
 		for(let i = 0; i < destaques.length; i++){
