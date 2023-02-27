@@ -1,4 +1,4 @@
-let destaques = document.querySelectorAll(".itemDestaque");
+const destaques = document.querySelectorAll(".itemDestaque");
 console.log(destaques);
 
 campoPesquisa.addEventListener("input", function(){
