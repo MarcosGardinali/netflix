@@ -1,4 +1,4 @@
-#Projeto Netflix
+<h1>Projeto Netflix</h1>
 <hr>
 Para acessar a página do projeto, visite:
 https://marcosgardinali.github.io/netflix/
