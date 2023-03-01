@@ -33,6 +33,11 @@
 	--cor-fundo: url("images/bg.png");
 }
 
+.light-mode{
+	--label-icon:  url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+	--cor-fundo: url("");
+}
+
 body{
 	background-image: var(--cor-fundo);
 	background-attachment: fixed;
