@@ -11,7 +11,7 @@ campoPesquisa.addEventListener("input", function(event){
 			let titulo = h1Titulo.textContent;
 			let expressao = new RegExp(this.value, "i");
 			if (!expressao.test(titulo)){
-				destaque.classList.add("invisivel")
+				destaque.classList.add("invisivel");
 			}else{
 				destaque.classList.remove("invisivel");
 			}
